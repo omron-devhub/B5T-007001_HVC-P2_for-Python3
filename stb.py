@@ -214,6 +214,6 @@ class STB(object):
         ret = self.stbDLL.STB_GetFrMinRatio(self.hSTB, byref(_min_ratio))
         return (ret, _min_ratio.value)
 
+
 if __name__ == '__main__':
     pass
-

@@ -176,8 +176,7 @@ class HVCResult(object):
             s += '\t[%s]\t' % i + self.hands[i].__str__() +'\n'
         return s
 
+
 if __name__ == '__main__':
     hvc_res = HVCResult()
     print(hvc_res)
-
-

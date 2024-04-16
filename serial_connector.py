@@ -58,6 +58,6 @@ class SerialConnector(Connector):
 
         return self._ser.read(read_byte_size)
 
-if __name__ == '__main__':
-    main()
 
+if __name__ == '__main__':
+    pass

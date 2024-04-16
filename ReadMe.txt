@@ -11,7 +11,7 @@ Special thank you to Anthony Moriarty.
 (1) Contents
   This code provides B5T-007001(HVC-P2) python API class and sample code using that API class.
   The sample code is for "Detection process" and "Album operation for face recognition".
-  
+
   The "Detection process" can execute any functions in all 10 functions of B5T-007001,
   and outputs the result in standard output.
   And this sample is avalable to use STB library which stabilizes the detected results by multiple frames
@@ -47,12 +47,12 @@ Special thank you to Anthony Moriarty.
 
 (4) Usage of sample code
   [Detection process]
-  
+
     Usage: execution.py <com_port> <baudrate> [use_stb=ON]
         com_port:  COM port
         baudreate: baudrate
         use_stb:   Using flag for STB Library (optional)
-    
+
     1. Example: for Windows
          execution.py COM3 9600 OFF
 
@@ -60,13 +60,13 @@ Special thank you to Anthony Moriarty.
           execution.py /dev/ttyACM0 921600 ON
 
   [Album operation]
-  
-    Usage: registration.py <com_port> <baudrate> 
+
+    Usage: registration.py <com_port> <baudrate>
 
 
 (5) Programing guidance
   1. Description of main classes
-  
+
     Class name            Description
     -------------------------------------------------------
     SerialConnector       Serial connector class
@@ -74,10 +74,10 @@ Special thank you to Anthony Moriarty.
     HVCTrackingResult     Class storing detection results
     GrayscaleImage        Calss stroing gray scale image
 
-      Refer to the class diagram in HVC-P2_class.png for detail.    
+      Refer to the class diagram in HVC-P2_class.png for detail.
 
   2. Main process flow
-  
+
    [Detection process]
 
     """ Create class """
@@ -145,7 +145,7 @@ Special thank you to Anthony Moriarty.
 
     """ save registered image """
     reg_img.save('reg_img.jpg')
-    
+
     """ Execution """
     (response_code, stb_status) = hvc_p2_api.execute(OUT_IMG_TYPE_NONE, hvc_tracking_result, img)
 
@@ -165,9 +165,9 @@ Special thank you to Anthony Moriarty.
 
 
 [NOTES ON USAGE]
-* This sample code and documentation are copyrighted property of OMRON Corporation  
+* This sample code and documentation are copyrighted property of OMRON Corporation
 * This sample code does not guarantee proper operation
 * This sample code is distributed in the Apache License 2.0.
 ----
-OMRON Corporation 
+OMRON Corporation
 Copyright 2023-2024 OMRON Corporation, All Rights Reserved.

@@ -185,5 +185,6 @@ class RecognitionResult(object):
             str = 'Recognition   Uid:{0} Score:{1}'.format(self.uid, self.score)
         return str
 
+
 if __name__ == '__main__':
     pass
