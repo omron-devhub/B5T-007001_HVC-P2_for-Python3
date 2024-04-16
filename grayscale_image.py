@@ -27,13 +27,13 @@ class GrayscaleImage(object):
         self.height = 0
         self.data = b''
 
-    def save(self, fname):
+    def get(self):
         w = self.width
         h = self.height
 
         # if no data, no save.
         if w == 0 or h == 0:
-            return False
+            return None
 
         img = Image.new("L", (w, h), 0)
         x = 0
@@ -41,5 +41,13 @@ class GrayscaleImage(object):
         for y in range(h):
             for x in range(w):
                 img.putpixel((x, y), ord(chr(self.data[w * y + x])))
-        img.save(fname)
-        return True
+        return img
+
+    def save(self, fname):
+        img = self.get()
+
+        if img is None:
+            return False
+        else:
+            img.save(fname)
+            return True
