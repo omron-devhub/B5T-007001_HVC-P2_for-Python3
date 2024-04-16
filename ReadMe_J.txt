@@ -10,12 +10,12 @@
 (1) サンプルコード内容
   本サンプルはB5T-007001(HVC-P2)のPython APIクラスとそのクラスを用いた2種類のサンプルコードを提供します。
   サンプルコードは「検出処理」、「顔認証用アルバム操作」の2種類のサンプルコードを用意しています。
-  
+
   「検出処理」ではB5T-007001の顔認証を含む全10機能を実行し、その結果を標準出力に出力します。
   また、本サンプルは「安定化ライブラリ(STB library)」を使用することができ
   複数フレーム結果を用いた検出結果の安定化と、顔と人体のトラキングが可能です。
-  
-  「顔認証用アルバム操作」では顔認証データをB5T-007001上のアルバムに登録、削除を実行することができます。 
+
+  「顔認証用アルバム操作」では顔認証データをB5T-007001上のアルバムに登録、削除を実行することができます。
   また、B5T-007001上のアルバムをPCなどのホスト装置にファイルとして保存することができます。
   保存されたアルバムファイルはB5T-007001に読み込むことも可能です。
 
@@ -51,7 +51,7 @@
       com_port：COMポート
       baudrate：ボーレート
       use_stb：STB libraryの使用/不使用、デフォルトON、省略可
-                   
+
       例）Windows用
           execution.py COM3 9600 OFF
 
@@ -60,11 +60,11 @@
 
   2. 顔認証用アルバム操作
 
-    Usage: registration.py <com_port> <baudrate> 
-      
+    Usage: registration.py <com_port> <baudrate>
+
 (5) プログラミングガイド
   1. 主なクラスの説明
-  
+
     クラス名              説明
     -------------------------------------------------------
     SerialConnector       シリアルコネクタクラス
@@ -146,7 +146,7 @@
 
     """ 登録画像の保存 """
     reg_img.save('reg_img.jpg')
-    
+
     """ 実行 """
     (response_code, stb_status) = hvc_p2_api.execute(OUT_IMG_TYPE_NONE, hvc_tracking_result, img)
 
@@ -157,7 +157,7 @@
         size = f.size
         conf = f.conf
         if f.registration is not None:
-            user_id = f.registration.uid 
+            user_id = f.registration.uid
             score = f.registration.score
             tr_status = f.registration.tracking_status
 

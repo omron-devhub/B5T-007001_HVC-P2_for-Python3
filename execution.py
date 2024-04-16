@@ -271,6 +271,6 @@ def main():
         hvc_p2_api.set_uart_baudrate(p2def.DEFAULT_BAUD)
         hvc_p2_api.disconnect()
 
+
 if __name__ == '__main__':
     main()
-

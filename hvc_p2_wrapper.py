@@ -310,5 +310,6 @@ class HVCP2Wrapper(object):
             data = None
         return (response_code, data_len, data)
 
+
 if __name__ == '__main__':
     pass

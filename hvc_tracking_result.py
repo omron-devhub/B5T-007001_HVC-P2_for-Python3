@@ -283,5 +283,6 @@ class HVCTrackingResult(object):
             # Appends to face list.
             self.faces.append(face_res)
 
+
 if __name__ == '__main__':
     pass

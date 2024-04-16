@@ -24,7 +24,7 @@
  - Sample code ***for Python*** is provided here.<br>
  - For notes and methods of usage, please confirm the "Read Me" attached with each sample file.
  - For the ***evaluation software*** and ***USB driver*** for Windows, please download from <B>[this page](https://components.omron.com/us-en/products/sensors/B5T).</B>
- 
+
  ![EvaluationSoftwareImage](https://user-images.githubusercontent.com/45954736/57433522-a82f7a00-7273-11e9-92eb-c3648ed695d7.png)
 
 ### Notes
