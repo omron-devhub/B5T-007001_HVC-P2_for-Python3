@@ -1,0 +1,10 @@
+﻿#-----------------------------------------------------
+# Revision history (B5T-007001 sample code for python 3)
+#-----------------------------------------------------
+
+ver 1.0 (2024/04/09)
+    - First release
+
+ver 1.1 (2024/06/05)
+    - Fixed an error that occurred when running with the STB library
+
